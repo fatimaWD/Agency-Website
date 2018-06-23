@@ -1,0 +1,104 @@
+/* HEADER */
+
+.header {
+    background: linear-gradient(rgba(74,151,189, 0.9), rgba(74,151,189, 0.9)), url("../../img/backgrounds/main-bg.jpg") center center no-repeat;
+    background-size: cover;
+    padding: 200px 0;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.header__h1 {
+    text-transform: uppercase;
+    font-size: 3.6em;
+    font-weight: bold;
+}
+
+.header__p {
+    font-size: 2em;
+    padding: 10px 0 30px 0;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+.header__h1-span--red {
+    color: $mainRed;
+}
+
+.header__h1-span--yellow {
+    color: $mainYellow;
+}
+
+.btn-span {
+    padding: 0 10px;
+}
+
+.header__btn--red:link,
+.header__btn--red:visited {
+    background-color: $mainRed !important;
+    border: solid 2px transparent !important;
+}
+
+.header__btn--red:hover,
+.header__btn--red:active {
+    border: solid 2px $darkRed !important;
+    background-color: $darkRed !important;
+}
+
+.waypoint1 {
+    animation-delay: 0.5s;
+    animation-duration: 1s;
+}
+
+.waypoint2 {
+    animation-delay: 1s;
+    animation-duration: 2s;
+}
+
+/* media queries for header */
+
+@media(max-width: 1024px) {
+    .header {
+        padding: 200px 0;
+    }
+}
+
+@media(max-width: 768px) {
+    .header {
+        padding: 150px 0;
+    }
+    .header__h1 {
+        font-size: 2.3em;
+    }
+    .header__p {
+        font-size: 1.8em;
+    }
+    .btn {
+        padding: 10px 20px !important;
+        font-size: 0.7em !important;
+    }
+}
+
+@media(max-width: 414px) {
+    .header {
+        padding: 130px 0;
+    }
+    .header__h1 {
+        font-size: 1.5em;
+        line-height: 34px;
+    }
+    .header__p {
+        font-size: 1em;
+        width: 90%;
+        margin: 0 auto;
+        line-height: 26px;
+    }
+
+    .btn-span {
+        padding: 0 5px;
+    }
+}
